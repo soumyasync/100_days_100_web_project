@@ -3613,7 +3613,8 @@ const animationEngine = ( () => {
   
     convertAllIcons() {
   
-      document.querySelectorAll( this.tagName ).forEach( icon => { this.convertIcon( icon ); } );
+      const targetIcons = document.querySelectorAll( this.tagName );
+      targetIcons.forEach( icon => { this.convertIcon( icon ); } );
   
     }
   
